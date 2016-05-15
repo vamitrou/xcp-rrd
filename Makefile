@@ -5,6 +5,7 @@ dist/build/lib-rrd/rrd.cmxa:
 .PHONY: install
 install:
 	rm -rf dist/build/lib-xcp-rrd/opt-*
+	sleep 2
 	ocamlfind install xcp-rrd lib/META $(wildcard dist/build/lib-xcp-rrd/*)
 
 .PHONY: uninstall
